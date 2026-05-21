@@ -6,27 +6,19 @@ using System.Threading.Tasks;
 
 namespace thiskeyword
 {
-    class MyClass
-    {
-        int num1;
-        int num2;
-        public MyClass(int num1,int num2) //local variables 
-        {
-            this.num1 = num1;//instance variables=local variables
-            this.num2 = num2;
-        }
-        public  void Add()
-        {
-            int num3=num1 + num2;
-            Console.WriteLine("sum of two numbers="+num3);
-        }
-    }
+   
+    
     internal class Program
     {
         static void Main(string[] args)
         {
             MyClass obj = new MyClass(100, 200);
             obj.Add();
+            Student std = new Student(1, "Janani");
+            std.Studentdetails();
         }
     }
+
+
+
 }
